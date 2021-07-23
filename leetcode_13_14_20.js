@@ -37,15 +37,21 @@ var romanToInt = function(s) {
     }
     
     let subSum = 0;
+    let remainder = ''
     
         
     for(let i = 0; i<s.length; i++) {
         if(romanSymbols[s[i] + s[i+1]]) {
             subSum += romanSymbols[s[i] + s[i+1]];
+            s[i] = ''; 
+            s[i+1] = '';
         }
+
+        remainder += s[i];
     }
     
-    return subSum;
+    
+    return subSum + romanSymbols[remainder];
     
     
     
