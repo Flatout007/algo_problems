@@ -37,7 +37,7 @@ var romanToInt = function(s) {
     }
     
     let subSum = 0;
-    let remainder = ''
+    let remainder = '';
     
         
     for(let i = 0; i<s.length; i++) {
@@ -50,7 +50,7 @@ var romanToInt = function(s) {
         remainder += s[i];
     }
     
-    
+
     return subSum + romanSymbols[remainder];
     
     
