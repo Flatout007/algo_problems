@@ -13,13 +13,11 @@ Given a roman numeral, convert it to an integer.
 
 
 var romanToInt = function(s) {
-
     // look for subtarction patterns, add them
     // remove subtraction patterns. add those.
     // add both as an aggregate.
         
-        
-        
+    
     let romanSymbols = {
     'I':   1,
     'V':   5,
