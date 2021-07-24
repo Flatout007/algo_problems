@@ -17,7 +17,6 @@ var romanToInt = function(s) {
     // remove subtraction patterns. add those.
     // add both as an aggregate.
         
-    
     let romanSymbols = {
     'I':   1,
     'V':   5,
@@ -53,9 +52,6 @@ var romanToInt = function(s) {
     
     
     
-    
-    
-    
     // "MCMXCIV"
     // 1994
     
@@ -65,6 +61,4 @@ var romanToInt = function(s) {
     // iv = 4, cm = 900, xc = 90  = 994
     
     // m = 1000
-
-    
 }    
