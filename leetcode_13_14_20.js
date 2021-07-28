@@ -207,13 +207,13 @@ var longestCommonPrefix = function(strs) {
   
   let left = 0;
   let right = strs.length - 1;
-  let match = false
+  let match = false;
   
   while(!match) {
       if(strs[left].slice(0, 2)  === strs[right].slice(0,2)) {
           
-          console.log('found match');
-          match = true;
+        console.log('found match');
+        match = true;
           
           
       }
