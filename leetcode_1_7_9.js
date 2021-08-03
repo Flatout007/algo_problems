@@ -81,6 +81,7 @@ const my_reverse = (x) => {
 /////////////////////////////////////////////////////////////////////////////
 // 9. Palindrome Number
  
+
 // Given an integer x, return true if x is palindrome integer.
 
 /*
@@ -100,7 +101,7 @@ it becomes 121-. Therefore it is not a palindrome.
  * @param {number} x
  * @return {boolean}
  */
- var isPalindrome = function(x) {
+function isPalindrome(x) {
     if(x < 0) return false;
        
     const reverseNum = parseFloat(x.toString().split('').reverse().join(''));
