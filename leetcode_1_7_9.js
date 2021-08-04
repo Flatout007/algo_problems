@@ -100,6 +100,7 @@ it becomes 121-. Therefore it is not a palindrome.
 /**
  * @param {number} x
  * @return {boolean}
+ * 
  */
 function isPalindrome(x) {
     if(x < 0) return false;
