@@ -237,13 +237,6 @@ Output: "fl"
           
     }  
     
-    
-    
-    
-    
-    // ["flower","flow","flight"]
-    
-    // fl fl true
 };
 
 function myMax(arr) {
