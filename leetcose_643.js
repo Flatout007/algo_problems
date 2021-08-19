@@ -15,9 +15,9 @@ Explanation: Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
  */
  var findMaxAverage = function(nums, k) {
     // avgaArray<-[], sum<-0.00000, windowStart<-0, windowStart<-0
-    
+
     //1.Use sliding window to determine average for subsets of k size
-    //2.avgsArray[] <<- avgs <- sum of all subsets[i] / subset.length
+    //2.avgsArray[] <<- avgs <- sum of all subsets[i] / subset.length or k
     //3.Return max int from avgsArray[i]
     
     let windowStart = 0,
