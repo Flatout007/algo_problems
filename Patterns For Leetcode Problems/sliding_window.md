@@ -1,6 +1,6 @@
 Sliding Window
 
-Just an if statement for subsets while looping to avoid nested loops i.e 
+Just an `if statement for subsets while looping` to avoid nested loops i.e 
 ```ruby  
       unless endOfWindow is >= subset.length - 1; dont slide the window
 ```
