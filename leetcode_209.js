@@ -8,6 +8,7 @@
  */
 
  // 1. Use sliding window to shrink arr based on if sum >= target
+ // 2. keep track of those subset lengths and return the minimum of those lengths
 
  var minSubArrayLen = function(target, nums) {
     
@@ -27,13 +28,11 @@
 
 
   return minArray.length <= 0 ? 0 : myMin(minArray);
-
 };
 
 
 function myMin(arr) {
   let min = arr.shift();
-
 
   for(let i =0; i<arr.length; i++) {
     if(min > arr[i]) min = arr[i]; 
