@@ -37,7 +37,7 @@ Explanation: Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
         */
         
         if(windowEnd >= k -1) {
-          avgsArray.push(sum / k);  
+          avgsArray[windowEnd+1] = (sum / k);  
           sum = sum - nums[windowStart];  
           windowStart += 1; 
         }
