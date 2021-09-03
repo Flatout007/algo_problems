@@ -26,16 +26,7 @@ Explanation: Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
     
     for(let windowEnd = 0; windowEnd < nums.length; windowEnd++) {
         sum += nums[windowEnd]
-        /*if(windowEnd !== k - 1) {
-          sum += nums[windowEnd]
-        } else if(windowEnd === k - 1) {
-            avgsArray.push(sum / k);  
-          sum = sum - nums[windowStart]
-          
-          windowStart += 1;  
-        }
-        */
-        
+      
         if(windowEnd >= k -1) {
           avgsArray[windowEnd+1] = (sum / k);  
           sum = sum - nums[windowStart];  
