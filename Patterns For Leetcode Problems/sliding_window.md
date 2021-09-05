@@ -2,8 +2,9 @@ Sliding Window
 
 Just an `conditonal statement for subsets while looping` to avoid O(n^2) loops i.e 
 ```ruby  
-      unless the endOfWindow or current value is > some subset length or passes a certian condition; dont slide the window
+      unless the endOfWindow passes a certian condition; dont slide the window
 ```
+
 Sliding the window is just `incrementing the startOfWindow` which starts at 0.
 always `decrement what slides out the window`. `The windowStart or left variable` is always the one thats going out of the window and gets decremented.
 
