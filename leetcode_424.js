@@ -47,9 +47,9 @@ var characterReplacement = function(s, k) {
         //    }
           
           // track max length of replaced string
-          let sub = s.substring(windStart, windEnd + 1);
-          let replaceSub = sub.replace(/[A-Z0-9/gi]/, maxChar); 
-          maxLength = Math.max(maxLength, replaceSub.length);
+        //   let sub = s.substring(windStart, windEnd + 1);
+        //   let replaceSub = sub.replace(/[A-Z0-9/gi]/, maxChar); 
+        //   maxLength = Math.max(maxLength, replaceSub.length);
        }
        
        return maxLength;
