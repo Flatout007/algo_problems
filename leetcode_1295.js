@@ -46,7 +46,7 @@ Only 1771 contains an even number of digits.
 
 
 var findDigitLength = function(num) {
-    // digit length is found by counting each of the digits except the first,
+    // digit length is found by counting each of the digits (not the sum) except the first,
     // adding it to 1, and finally dividing its base by the given n.
 
     let digitLength = 1;
