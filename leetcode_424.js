@@ -20,37 +20,47 @@ Explanation: Replace the one 'A' in the middle with 'B' and form "AABBBBA".
 The substring "BBBB" has the longest repeating letters, which is 4.
 */
 
+v/**
+ * @param {string} s
+ * @param {number} k
+ * @return {number}
+ */
 var characterReplacement = function(s, k) {
     let hash = {},
         windEnd,
         windStart = 0, 
         maxLength = 0,
-        maxChar = '',
-        maxCharInt = 0;
+        maxCharInt = 0,
+        maxChar = '';
        
        //count char frequencies
        for(windEnd = 0; windEnd < s.length; windEnd++) {
            let right = s[windEnd];
            if(!hash[right]) {
-               hash = 1;
-           } else hash += 1;
+               hash[right] = 1;
+           } else hash[right] += 1;
            
            // track max char in current window
            maxCharInt = Math.max(maxCharInt, hash[right]);
-           maxChar = Object.keys(hash).find((ele) => hash[ele] === maxCharInt);
+           maxChar = Object.keys(hash).find(ele => hash[ele] === maxChar);
            
-           // shrink window if we have more than k chars left
-        //    while(// fix condition later) {
-        //        let left = s[windStart];
-        //        hash[left] -= 1;
-        //        windStart += 1;
-        //    }
+           
+           
+           // shrink window if letters to be replaced are more than k
+           let sub = s.substring(windStart, windEnd + 1);
+           if(k === 1) return sub.length - maxCharInt;
+           while((sub.length - maxCharInt) > k) {
+               let left = s[windStart];
+               hash[left] -= 1;
+               windStart += 1;
+           }
           
-          // track max length of replaced string
-        //   let sub = s.substring(windStart, windEnd + 1);
-        //   let replaceSub = sub.replace(/[A-Z0-9/gi]/, maxChar); 
-        //   maxLength = Math.max(maxLength, replaceSub.length);
+          // track max length of replaced chars
+          let replaceSub = sub.replace(/[A-Z]/gi, maxChar);
+          maxLength = Math.max(maxLength, replaceSub.length);
+          
        }
+       
        
        return maxLength;
    };
