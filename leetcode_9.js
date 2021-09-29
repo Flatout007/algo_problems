@@ -1,19 +1,3 @@
-// 1. Two Sum
-
-/* 
-Given an array of integers nums and an integer 
-target, return indices of the two numbers 
-such that they add up to target
-*/
-
-// ex: input:([3,3], 6) output => [0,1];
-
-const twoSum = (nums, target) => {
-   
-};
-
-
-/////////////////////////////////////////////////////////////////////////////
 // 9. Palindrome Number
  
 
@@ -36,7 +20,7 @@ it becomes 121-. Therefore it's not a palindrome.
  * @param {number} x
  * @return {boolean}
  */
-function isPalindrome(x) {
+ function isPalindrome(x) {
     if(x < 0) return false;
        
     const reverseNum = parseFloat(x.toString().split('').reverse().join(''));
@@ -44,5 +28,3 @@ function isPalindrome(x) {
        
     return reverseNum === num ?  true :  false;       
 };
-
-

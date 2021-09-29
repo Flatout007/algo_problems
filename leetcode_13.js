@@ -150,29 +150,6 @@ var romanToInt = function(s) {
      
  
     
-     return p
- 
- 
- // "MCMXCIV"
- // 1994
- 
- // M
- 
- 
- // iv = 4, cm = 900, xc = 90  = 994
- 
- // m = 1000
- 
- 
- // "MMCMLXIV" 
- // 2964
-
- 
- //  "MMLX"  
- 
- // iv = 4, cm = 900, 904 + 2060
- 
- // M = 1000, M = 1000, L= 50, x = 10
- 
- }
+     return p 
+}
  
