@@ -10,8 +10,8 @@ An hourglass in  is a subset of values with indices falling in this pattern in '
 a b c
   d
 e f g
-There are  hourglasses in . An hourglass sum is the sum of an hourglass' values. 
-Calculate the hourglass sum for every hourglass in the 2d array, then print the max sum.
+An hourglass sum is the sum of an hourglass' values. 
+Calculate the hourglass sum for every hourglass in the 2d array, then return the max sum.
 */
 
 function hourglassSum(arr) {
