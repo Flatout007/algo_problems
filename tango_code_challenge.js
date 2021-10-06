@@ -1,5 +1,5 @@
 
-// 1. Find the string with max length in an array.
+// 1. Find the string with the max length in an array.
 function longestStr(arr) {
   let max = arr[0];
 
@@ -16,11 +16,10 @@ function longestStr(arr) {
 // return that max string, else return an array of all max strings of same length.
 function longest2(arr) {
     let max = longestStr(arr);
-    arr.splice(0,1);
     let myArr = [];
 
     for(let i = 0; i<arr.length; i++) {
-        if(max.length === arr[i]) myArr.push(arr[i]);
+        if(max.length === arr[i].length) myArr.push(arr[i]);
     }
 
     return myArr.length > 1 ? myArr : max;
@@ -39,6 +38,6 @@ async function api2() {
     return data;
 }
 
-/* technical questions asked:
-  1. give me three ways to manipulate state with react.
+/* technical question(s) asked:
+  // 1. give me three ways to manipulate state with react.
 */
