@@ -38,6 +38,6 @@ async function api2() {
     return data;
 }
 
-/* technical question(s) asked:
-  // 1. give me three ways to manipulate state with react.
+/* Technical question(s) asked:
+  // 1. What are three ways to manipulate state with react ?
 */
