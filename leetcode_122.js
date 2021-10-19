@@ -27,6 +27,9 @@ Total profit is 4.
  var maxProfit = function(prices) {
     let max = 0; 
     
+    // the trick is to go through each price strting with the first,
+    // then, if at anytime the next price is greater then the prev price
+    // subtract the two and add it to the max profit so far.
     for(let i = 1; i<prices.length; i++) {
         if(prices[i] > prices[i-1]) {
             max += prices[i] - prices[i-1];
