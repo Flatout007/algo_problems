@@ -1,5 +1,5 @@
 /*
-// 1476. Subrectangle Queries
+// 1476. Subrectangle Queries       [MEDIUM]
 Implement the class SubrectangleQueries which receives a rows x cols rectangle as a matrix 
 of integers in the constructor and supports two methods:
 - 1. updateSubrectangle(int row1, int col1, int row2, int col2, int newValue)
@@ -57,17 +57,11 @@ subrectangleQueries.getValue(0, 2); // return 5
  * @return {void}
  */
 SubrectangleQueries.prototype.updateSubrectangle = function(row1, col1, row2, col2, newValue) {
-    let s = new SubrectangleQueries(this.rectangle);
-    let sub = s.rectangle;
-    
-    for(let i = 0; i<sub[row1].length; i++) {
-        sub[row1][i] = newValue;
-        sub[col1][i] = newValue;
-        sub[row2][i] = newValue;
-        sub[col2][i] = newValue;
+    for(let i = row1; i<=row2; i++) {
+        for(let j = col1; j<=col2; j++) {
+            this.rectangle[i][j] = newValue;
+        }
     }
-    
-  
 };
 
 
@@ -77,10 +71,7 @@ SubrectangleQueries.prototype.updateSubrectangle = function(row1, col1, row2, co
  * @return {number}
  */
 SubrectangleQueries.prototype.getValue = function(row, col) {
-      let s = new SubrectangleQueries(this.rectangle);
-    let sub = s.rectangle;
-    
-    return sub[row][col];
+     return this.rectangle[row][col];
 };
 
 /** 
