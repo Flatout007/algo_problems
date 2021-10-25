@@ -19,7 +19,7 @@ Explanation: 10 + 11 + 11 = 32
 
    // Spread n out and find it's max int.
    // This is possible because by rule the minimum number of numbers 
-   // needed so to sum up to n will always be the max int of n.
+   // needed so to sum up to n will always be the max integer of n.
    
     const spread = n.split('');
      
