@@ -6,6 +6,7 @@ class Node {
     }
 }
 
+
 class List {
     constructor() {
         this.head = null;
@@ -26,8 +27,8 @@ class List {
        this.tail.next = node;
        this.tail = this.tail.next;
        this.size++;
-       return this
 
+       return this
     }
 
     popFromList() {
@@ -56,6 +57,7 @@ class List {
       this.head = secondNode;
       this.size--;
       if(this.size === 0) {this.head = null; this.tail = null;}
+
       return formerHead;
     }
 
@@ -66,7 +68,65 @@ class List {
        node.next = this.head;
        this.head = node;
        this.size++;
+
        return this;
+    }
+
+    getNodeFromList(num) {
+        if(!this.head) return;
+        if(num <= -1) return;
+        if(num > this.size) return;
+        let count = 0;
+        let tempNode = this.head;
+
+        while(tempNode) {
+            if(count === num) return tempNode;
+            count += 1;
+           
+         tempNode = tempNode.next;   
+        }
+    }
+
+    setNodeFromList(pos, val) {
+       if(!this.getNodeFromList(pos)) return false;
+       this.getNodeFromList(pos).val = val;
+
+       return true;
+    }
+
+    insertNodeToList(pos, val) {
+        let node = new Node(val);
+        if(!pos) return;
+        if(!this.head) {this.head = node; this.size++; return this}
+        if(pos === 0)  {this.unshiftToList(node); this.size++; return this};
+        if(pos === this.size) {this.pushToList(node); this.size++; return this};
+
+        let prevNode = this.getNodeFromList(pos - 1);
+        node.next = prevNode.next;
+        prevNode.next = node;
+        this.size++;
+
+        return this;
+    }
+
+    removeNodeFromList(pos) {
+        if(!this.head) return;
+        if(this.size === 1) {return this.shiftFromList()}
+        if(pos === this.size) return this.popFromList();
+        if(pos === 0) return this.shiftFromList();
+        let prevNode = this.getNodeFromList(pos - 1);
+        let markForDeletion = prevNode.next;
+
+        prevNode.next = null;
+        prevNode.next = markForDeletion.next;
+        this.size--;
+
+        return markForDeletion;
+    }
+
+    reverseNodesFromList() {
+        
+
     }
 
     static FindSecondToLastNode(list) {
@@ -83,9 +143,13 @@ class List {
 }
 
 let list = new List();
-list.pushToList('AKM')
-list.pushToList('M1 Carbine')
-list.pushToList('M1 Garand')
+
+list.pushToList('AKM');              
+list.pushToList('M1 Carbine');            
+list.pushToList('M1 Garand');            
 list.pushToList('Beretta M9')
 
+ // list.pushToList('AKM');       ->       list.pushToList('M1 Carbine');     ->       list.pushToList('M1 Garand');      ->       list.pushToList('Beretta M9')
+// list.pushToList('AKM');
+// tail
 
