@@ -1,6 +1,5 @@
 class Node {
-    constructor(val) {
-        
+    constructor(val) {  
         this.next = null;
         this.val = val;
     }
@@ -125,8 +124,23 @@ class List {
     }
 
     reverseNodesFromList() {
+        if(!this.head) return;
+        if(this.size === 1) return this.head;
+        let count = 0;
+        let curr = this.head;  
+        this.head = this.tail;
+        this.tail = curr;
+        let prev = null;
         
-
+        while(curr) {
+         let tempNode = curr.next; 
+         curr.next = prev;
+         prev = curr; 
+         
+        curr = tempNode;
+        }
+        
+        return this;
     }
 
     static FindSecondToLastNode(list) {
@@ -150,6 +164,6 @@ list.pushToList('M1 Garand');
 list.pushToList('Beretta M9')
 
  // list.pushToList('AKM');       ->       list.pushToList('M1 Carbine');     ->       list.pushToList('M1 Garand');      ->       list.pushToList('Beretta M9')
-// list.pushToList('AKM');
-// tail
 
+
+       
