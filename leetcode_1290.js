@@ -33,7 +33,7 @@ var getBinaryNum = (head) => {
     
     while(h) {
         nums.push(h.val);
-    h = h.next    
+     h = h.next    
     }
     
     return nums;
