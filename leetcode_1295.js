@@ -20,7 +20,9 @@ Explanation:
 Only 1771 contains an even number of digits.
 */
 
-
+// varient of number o islands then
+// tree or limklist problem
+// 
 /**
  * @param {number[]} nums
  * @return {number}
