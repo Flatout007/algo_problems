@@ -23,24 +23,19 @@ Explanation:
  * @return {number}
  */
  var numOfStrings = function(patterns, word) {
-    let p1, p2;
-    let i = 0, count = 0;
-    
-    while(i < patterns.length) {
-        if(findSubString(patterns[i], word.substring(p1, p2)) || p2 > word.length) {
-            count += 1;
-        } else {
-            p1 = p2;
-            p2 = p2 + patterns[i].length;
+    let count = 0; 
+    // not passing all test cases
+    for(let i = 0; i<word.length; i++) {
+        for(let j = 0; j<word.length; j++) {
+            if(patterns.includes(word.slice(i,j + 1))) {
+                count += 1;
+            }               
         }
-       
-      if(p2 > word.length) i += 1;  
     }
+     
+    return count; 
 };
 
-var findSubstring = function(pattern, word) {
-    if(pattern === word) return true;
-}
 
 
 
