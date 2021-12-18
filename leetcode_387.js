@@ -26,8 +26,7 @@ var firstUniqChar = function(s) {
         }   
     }
     
-    // look for first key with a 1 value;
-    // return its index immediately
+    // look for first key with a 1 value; return its index immediately
     for(let i = 0; i<Object.values(hash).length; i++) {
         if(Object.values(hash)[i][0] === 1) {
             return Object.values(hash)[i][1];
