@@ -32,7 +32,7 @@ After flattening the multilevel linked list it becomes:
  var flatten = function(head) {
     let h = new Node(-1);
     
-    
+    // does not work
     while(head.next) {                 
         if(head.child) { 
             let childList = head.child; 
