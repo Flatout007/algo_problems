@@ -8,7 +8,7 @@
 
 _Example of using recursion to search for a node in a binary tree using Psudocode_
 
-```php
+```cs
 search(root, value_to_find)
     if(root equals null) return null
 
