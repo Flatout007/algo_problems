@@ -4,7 +4,7 @@
 
 :heavy_check_mark: In every step we try to make the problem smaller
 
-:heavy_check_mark: We mandatorily need to have a base condition, which tells the system to stop the resursion
+:heavy_check_mark: We mandatorily need to have a base condition, which tells the system to stop the recursion
 
 _Example of using recursion to search for a node in a binary tree using Psudocode_
 
