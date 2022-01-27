@@ -13,6 +13,6 @@
 :heavy_check_mark: In some languages like JS, the implementation of the ```&&``` operator "short-circuts", stops checking, 
    		   and returns ```false``` as soon as it finds a ```false``` value.
 
-:heavy_check_mark: This allows react to make sure needed data is there before it moves on to check and/or render the next piece of code. **N.B** *if the ```&&``` operator returns false, render will return false, and
+:heavy_check_mark: This allows react to make sure needed data is there before it moves on to check and/or render the next piece of code. **N.B** *if the ```&&``` operator returns false during render, render will return false, and
 		   React will not render any procedural code.*
 
