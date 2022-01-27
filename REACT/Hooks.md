@@ -1,5 +1,5 @@
 
-# HOOKS <img src="https://alduncanson.gallerycdn.vsassets.io/extensions/alduncanson/react-hooks-snippets/1.2.0/1603323134806/Microsoft.VisualStudio.Services.Icons.Default" alt="drawing" width="100"/>
+# HOOKS <img src="https://alduncanson.gallerycdn.vsassets.io/extensions/alduncanson/react-hooks-snippets/1.2.0/1603323134806/Microsoft.VisualStudio.Services.Icons.Default" alt="react logo" width="100"/>
 :heavy_check_mark: Hooks are special functions that "hook" into your react component to effectively modify its ```context``` during its lifecycle
 
 :heavy_check_mark: Hooks are replacements for ```class``` lifecylce Methods
