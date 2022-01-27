@@ -1,10 +1,10 @@
 # Conditional Rendering <img src="https://daqxzxzy8xq3u.cloudfront.net/wp-content/uploads/2019/06/29192442/react-conditional-types-1024x768.jpg" alt="react logo" width="100"/>
-:heavy_check_mark: Conditional Rendering is needed because code runs faster than API call's.
+:heavy_check_mark: Conditional Rendering is needed because React code runs faster than API call's.
 
-:heavy_check_mark: If you call a JS method during your API call, it can call it milliseconds before getting it's needed data or argument from 
+:heavy_check_mark: This means if you call a JS method during your API call, it can call it milliseconds before getting it's needed data or arguments from 
 		   the API, resulting in the method being called on or with ```null```.
 
-:heavy_check_mark: To fix this issue Conditional Rendering was suggested. There are multiple ways to do it.
+:heavy_check_mark: To fix this issue, Conditional Rendering was suggested. There are multiple ways to do it.
 
 ## Short-Circuit
 :heavy_check_mark: "Short-Circuit" is a programming phrase used when describing the behavior of the ```&&``` operator in a given
