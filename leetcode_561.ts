@@ -36,7 +36,8 @@ function arrayPairSum(nums: number[]): number {
     }
     
     //nsole.log(arr1, arr2);
-    return arr1;
+   // return arr1;
+   return
 };
 
 /*
