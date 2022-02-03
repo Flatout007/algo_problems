@@ -29,7 +29,7 @@ Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
     for(let i = 1; i<sortedIntervals.length; i++) {
        let [currStart, currEnd] = sortedIntervals[i];
        let [prevStart, prevEnd] = mergedIntervals[mergedIntervals.length-1];
-       
+    
        if(currStart <= prevEnd) {
            // find max between stored[end] & sorted [end] to overwite the last [end] in stored intervals
            mergedIntervals[mergedIntervals.length - 1][1] = Math.max(prevEnd, currEnd);
