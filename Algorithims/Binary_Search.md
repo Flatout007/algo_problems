@@ -8,7 +8,7 @@ hence, <b> N.B: The array must be sorted first to apply binary search</b>.
 _Binary Search pusedocode_:
 ```rb
 binary search(arr, start, n, x)
-  if n is in bounds meaning "if n >= x":
+  if n is in bounds meaning "if n >= start":
 
 	find middle cell of array: "mid = 1 + Math->floor((n-1) / 2)"
         
