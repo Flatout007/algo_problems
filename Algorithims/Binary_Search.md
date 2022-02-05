@@ -14,9 +14,9 @@ binary search(arr, start, n, x)
         
         if mid ever equals x:  return mid
 
-        if current mid is smaller than x: binary search(arr, l, mid - 1, x)
+        if current mid is smaller than x: return binary search(arr, l, mid - 1, x)
 
-        else if current mid is greater than x: binary search(arr, mid + 1, r, x)
+        else if current mid is greater than x: return binary search(arr, mid + 1, r, x)
    
    else I reached the end, so x is not found therefore, return -1;
 ```
