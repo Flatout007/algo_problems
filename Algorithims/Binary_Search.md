@@ -6,7 +6,7 @@
 hence, <b> N.B: The array must be sorted first to apply binary search</b>.
 
 _Binary Search pusedocode_:
-```rb
+```s
 binary search(arr, start, n, x)
   if n is in bounds meaning "if n >= start":
 
