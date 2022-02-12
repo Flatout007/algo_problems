@@ -16,24 +16,27 @@ Explanation: There's nothing to delete.
  * @return {string}
  */
  var removeDuplicates = function(s, k) {
-    let mat = [];
-    let str = "";
+    let stack = [];
+    s = s.split('');
+    let str = '';
     
-    for(let i in s) {
-        if(mat.length && mat[mat.length-1][0] === s[i]) {
-            mat[mat.length-1][1] += 1;
-            if(mat[mat.length-1][1] == k) mat.pop();
+    for(let char of s) {
+        if(stack.length && stack[stack.length - 1][0] === char) {
+            stack[stack.length-1][1] += 1;
+            
+           if(stack[stack.length-1][1] === k) stack.pop();
         } else {
-            mat.push([s[i], 1]);
+            stack.push([char, 1]);
         }
     }
     
-    for(let i in mat) {
-       let [char, count] = mat[i];
-       str += char.repeat(count);
+    for(let i = 0; i<stack.length; i++) {
+        let [char, number] = stack[i];
+        str += char.repeat(number);
     }
     
     return str;
 };
+
 
 
