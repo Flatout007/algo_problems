@@ -23,6 +23,6 @@ Output: ["o","l","l","e","h"]
 // };
 
 var reverseString = function(s) {
-    return s.reverse();
+    s = s.reverse();
 }
 
