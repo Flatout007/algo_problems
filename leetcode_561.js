@@ -15,9 +15,9 @@ Explanation: All possible pairings (ignoring the ordering of elements) are:
 So the maximum possible sum is 4 
 */
 // does not work, try diff approach
-function arrayPairSum(nums: number[]): number {
-    let arr1: number[] = [];
-    let arr2: number[] = [];
+function arrayPairSum( nums) {
+    let arr1;
+    let arr2;
     
     for(let i = 0; i<nums.length; i++) {
         for(let j = 0; j<nums.length; j++) {
@@ -34,31 +34,6 @@ function arrayPairSum(nums: number[]): number {
             } else continue;
         }
     }
-    
-    //nsole.log(arr1, arr2);
-   // return arr1;
-   return
+
 };
 
-/*
-Input: nums = [1,4,3,2]
-Output: 4
-
-**group these integers into n pairs
-***find All unique possible pairings
-*** get pairs of all unique indices
-
-basically make a loop that does this...
-
-get this 
-array first
-  ^
-  |
-i   j        p  q       indices
-[1][4]      [3][2]    [0][1]  [2][3]
-[1][3]      [4][2]    [0][2]  [1][3]
-[1][2]      [4][3]    [0][3]  [1][2]
-
-the next pairs of i and j cant be starting row idx or it's self
-p has to be greater than prev index
-*/
