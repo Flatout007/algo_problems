@@ -14,26 +14,33 @@ Explanation: All possible pairings (ignoring the ordering of elements) are:
 3. (1, 2), (3, 4) -> min(1, 2) + min(3, 4) = 1 + 3 = 4
 So the maximum possible sum is 4 
 */
-// does not work, try diff approach
-function arrayPairSum( nums) {
-    let arr1;
-    let arr2;
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+ var arrayPairSum = function(nums) {
+    let count = 0;
+    let a, b = 1;
     
-    for(let i = 0; i<nums.length; i++) {
-        for(let j = 0; j<nums.length; j++) {
-            arr1.push(nums[i], nums[j]);
-        }
-        break;
+    // sort the list
+    nums = nums.sort((a,b) => a-b);
+   
+    // n times: add the min element from n pairs to a running count
+    for(a = 0; a<nums.length; b+=2, a+=2) { 
+            count += Math.min(nums[a], nums[b]);
     }
     
-    for(let p = 1; p<nums.length; p++) {
-        if(p === nums.length-2) break;
-        for(let q = 1; q<nums.length; q++) { 
-            if(q !== p && q > p) {
-                arr2.push(nums[p], nums[q]);
-            } else continue;
-        }
-    }
-
+    return count;  
 };
+
+// sort
+// [1,4,3,2] => [1,2,3,4]
+// n = 4
+// n times: add the min element from n pairs to a running count
+    // count => 1, i => 0; => [1,2], min => 1
+    // count => 3, i => 2; => [3,4], min => 3
+    // increment i by 2
+// (1 + 3) => 4
+// return count => 4;
+    
 
