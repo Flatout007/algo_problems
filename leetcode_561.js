@@ -33,14 +33,4 @@ So the maximum possible sum is 4
     return count;  
 };
 
-// sort
-// [1,4,3,2] => [1,2,3,4]
-// n = 4
-// n times: add the min element from n pairs to a running count
-    // count => 1, i => 0; => [1,2], min => 1
-    // count => 3, i => 2; => [3,4], min => 3
-    // increment i by 2
-// (1 + 3) => 4
-// return count => 4;
-    
 
