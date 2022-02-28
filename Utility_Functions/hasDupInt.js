@@ -1,4 +1,4 @@
-// checks an integer for duplicate value and returns true or false
+// checks an integer for any digit that appears more than once & returns true or false
 function hasDupInt(input) {
     let seen = new Array(10), n = input; // part 1
     seen.fill(0);
