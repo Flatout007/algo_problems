@@ -36,7 +36,7 @@ function getRowColSum(matrix) {
    
    // r = [9,9,9,9]
    
-   // c = [3,6,9,9,12]
+   // c = [3,6,9,12]
    
    // getRowColSum([
    //  [1,2,3,3], 
