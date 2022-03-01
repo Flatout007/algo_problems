@@ -1,5 +1,4 @@
-
-// Gets the row sum & column sum of a matrix
+// Gets the row sum & column sum of all rows and columns in a matrix
 function getRowColSum(matrix) {
     let colSum = [], rowSum = [], sum;
     
