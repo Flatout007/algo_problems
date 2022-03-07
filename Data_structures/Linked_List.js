@@ -6,6 +6,16 @@ class Node {
 }
 
 
+/**
+ * Linked List:
+
+Unlike an Array, the Linked list does not follow a contigous block of memory , 
+
+instead, its a data struture in which each node has a special pointer(s) that "point" to another;
+
+This allows for splitting up nodes while still mantaining its relationship with other nodes
+ */
+
 class List {
     constructor() {
         this.head = null;
