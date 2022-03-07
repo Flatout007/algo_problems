@@ -18,39 +18,29 @@ Output: true
  * @param {string} t
  * @return {boolean}
  */
- var isIsomorphic = function(s, t) {
-    // does not work all the way
-    let scount = Object.values(fun1(s)).reduce((acc, ele) => acc += ele);
-    let tcount = Object.values(fun1(t)).reduce((acc, ele) => acc += ele);
-    let schars = Object.keys(fun2(s));
-    let tchars = fun2(t);
-    // if they have the same chars its also false
-    if(scount !== tcount || s.length !== t.length) return false;
+var isIsomorphic = function(s, t) {
+    let mapT = [];
+    let mapS = [];
+    
+    for(let i = 0; i<s.length; i++) {
+        let tcode = parseFloat(t[i].charCodeAt(0));
+        let scode = parseFloat(s[i].charCodeAt(0));
+        
+        if(!mapS[scode]) {
+            if(!mapT[tcode]) {
+                mapS[scode] = t[i];
+                mapT[tcode] = s[i];
+            } else return false;
+        }
+        
+        else if(mapS[scode] === t[i]) {
+            continue;
+        } else return false;
+    }  
+    
     return true;
 };
     
-var fun1 = function(s) {
-    let hash = {};
-    
-    for(let i in s) {
-        if(!hash[s[i]]) {
-            hash[s[i]] = 1;
-        } 
-    }
-    
-    return hash;
-}
 
-var fun2 = function(s) {
-    let hash = {};
-    
-    for(let i in s) {
-        if(!hash[s[i]]) {
-            hash[s[i]] = 1;
-        } else hash += 1;
-    }
-    
-    return hash;
-}    
     
     
