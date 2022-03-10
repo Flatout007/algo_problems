@@ -12,17 +12,14 @@ Output: ["o","l","l","e","h"]
  * @param {character[]} s
  * @return {void} Do not return anything, modify s in-place instead.
  */
-//  var reverseString = function(s) {
-//     for(let i = 0; i<s.length / 2; i++) {
-//         s[i] = mutate(s[s.length - i - 1], s[s.length - i - 1] = s[i]);
-//     }
-// };
+ var reverseString = function(s) {
+    for(let i = 0; i<s.length / 2; i++) {
+        s[i] = mutate(s[s.length - i - 1], s[s.length - i - 1] = s[i]);
+    }
+};
 
-// var mutate = function(x, y) {
-//     return x;
-// };
+var mutate = function(x, y) {
+    return x;
+};
 
-var reverseString = function(s) {
-    s = s.reverse();
-}
 
