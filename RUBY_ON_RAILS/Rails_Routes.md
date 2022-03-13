@@ -3,7 +3,7 @@
 The Rails router recognizes ```url``` ```strings``` & chooses a controller method to which the request is dispatched/maped to for processing. <b>i.e</b> The router receives a GET request for ```/photo/17``` & realizes that ```PhotosController#show()``` should be called for a Photo with the ```:id``` of 17. <b>N.B</b> <i>the router matches on both HTTP method and path name.</i>
 
 ### Rails restful sample routes for a Photo 
-| HTTP Request | Route | Action & Description of Action |  
+| HTTP Request | Route/method | Action & Description of Action |  
 |---------------|   --------------- | --------------- |
 | GET	| /photos	| <b>index</b>	- display a list of all photos
 | GET	| /photos/new	| <b>new</b> - return an HTML form for creating a new photo
@@ -15,7 +15,9 @@ The Rails router recognizes ```url``` ```strings``` & chooses a controller metho
 
 
 ### Rails's Router Helper Methods
-| rails method | url |   
+<i>If you build URLs by hand in Rails, you're doing it wrong.</i>
+Always prefer the routing helpers to building your own URLs through string interpolation. The routing helpers are less error prone and tedious.
+| Rails route/method | url |   
 |---------------|   --------------- |
 | photos_url()	| http://www.example-site.com/photos
 | new_photo_url()	| http://www.example-site.com/photos/new
