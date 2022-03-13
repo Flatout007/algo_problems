@@ -8,10 +8,11 @@
 When the application receives a ```request```, the ```router``` will determine which ```controller``` & ```action``` (method) to run. The ```router``` will then create a ```new``` ```instance``` of the ```controller```, & ```call``` the method that is named by the ```action```.
 ```ruby
 class PhotosController < ApplicationController
+  # index action display's a list of all photos
   def index
     render json: Photo.all
   end
-
+  # show action display's a specific photo
   def show
     render json: Photo.find(params[:id])
   end
