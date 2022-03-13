@@ -7,7 +7,7 @@ function reverse(arr) {
     //  let middle = Math.floor(arr.length/2);
 
     // Go to the middle of arr using two pointers ```start``` & ```end``` swapping their values
-    // & increasing ```start``` & decreasing ```end``` every iteration until middle is reached by a pointer.
+    // increasing ```start``` & decreasing ```end``` every iteration until middle is reached by a pointer.
      
     //  while(memloc1 !== middle || memloc2 !== middle) {
        // let temp = arr[memloc2];
