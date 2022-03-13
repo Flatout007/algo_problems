@@ -1,5 +1,5 @@
 # Ruby on Rails
-- Ruby on Rails or "Rails" is a MVC framework created by Danish programmer David Heinemeier Hansson designed for exclusive use with the Ruby programming language. 
+- Ruby on Rails or "Rails" is a MVC framework created by Danish programmer David Heinemeier Hansson designed exclusively for the Ruby programming language. 
 
 ## Rails diagram
 <img src="https://assets.aaonline.io/fullstack/rails/assets/rails_diagram.png"></img>
