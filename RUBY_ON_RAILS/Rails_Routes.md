@@ -8,6 +8,7 @@ $ rails routes
 ```
 
 ### Rails restful sample routes for a Photo 
+
 | HTTP Request | Route / HTTP Method | Action & Description of Action |  
 |---------------|   --------------- | --------------- |
 | GET	| /photos	| <b>index</b>	- display a list of all photos
@@ -20,6 +21,7 @@ $ rails routes
 
 
 ### Rails's Router Helper Methods
+
 <i>If you build URLs by hand in Rails, you're doing it wrong.</i>
 Always prefer the routing helpers to building your own URLs through string interpolation. The routing helpers are less error prone and tedious.
 
@@ -39,5 +41,6 @@ You can specify the controller action that Rails should run for ```GET/``` by us
 This invokes the PostsController's index method when the root URL is requested.
 
 ### REST philosophy
+
 things like "liking a photo", should be thought of in terms of CRUD (create,read,update,destroy) ```actions``` on ```resources```. i.e, instead of creating a custom, non-RESTful ```controller action``` to "like" a photo, we might create a new ```resource```, a Like ```object```, which we could either create, destroy etc..
 
