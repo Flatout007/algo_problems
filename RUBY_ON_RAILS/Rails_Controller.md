@@ -5,7 +5,7 @@
 ```inherit``` from ```ApplicationController``` which ```extends``` ```ActionController::Base```<i>("which is where the rails super powers come from")</i>
 
 :heavy_check_mark: The ```controller``` code will go in ```subclasses``` of ```ApplicationController```.
-When the application receives a ```request```, the ```router``` will determine which ```controller``` & ```action``` (method) to run. The ```router``` will then create a ```new``` ```instance``` of the ```controller```, & ```call``` the method that is named by the ```action```.
+When your ```Application``` receives a ```request```, the ```router``` will determine which ```controller``` & ```action``` (method) to run. The ```router``` will then create a ```new``` ```instance``` of the ```controller```, & ```call``` the method that is named by the ```action```.
 ```ruby
 class PhotosController < ApplicationController
   # index action display's a list of all photos

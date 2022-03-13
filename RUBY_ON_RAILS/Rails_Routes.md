@@ -1,8 +1,8 @@
 # Rails's Router
 
-When the Rails ```server``` is listening for requests the Rails ```router``` is able to recognize ```url strings``` & choose a ```controller method``` to which the request is dispatched/maped to for processing. <b>i.e</b> The router receives a ```GET``` ```request``` for ```"/photo/17"``` & realizes that ```PhotosController#show()``` should be called on/for an instance of ```Photo``` with the ```:id``` of an ```int``` 17. <b>N.B</b> <i>the router matches on both HTTP method and path name.</i>
+When the Rails ```server``` is listening for ```requests``` the Rails ```router``` is able to recognize ```url strings``` & choose a ```controller method``` to which the request is ```dispatched``` to for processing. <b>i.e</b> The router receives a ```GET``` ```request``` for ```"/photo/17"``` & realizes that ```PhotosController#show()``` should be called on/for an instance of ```Photo``` with the ```:id``` of a ```number``` 17. <b>N.B</b> <i>the router matches on both HTTP method and path name.</i>
 
-<i>navaigate to ```# config/routes.rb``` to begin drawing route resources </i>
+<i>navaigate to ```# config/routes.rb``` to begin drawing route resources for your ```Application``` </i>
 ```ruby
 # config/routes.rb
 Photo::Application.routes.draw do
@@ -10,7 +10,7 @@ Photo::Application.routes.draw do
 end
 ```
 
-To get a complete list of the available routes you set up so far in your application, execute the ```rails routes``` command
+To get a complete list of the available routes you set up so far in your ```Application```, execute the ```rails routes``` command
 ```
 $ rails routes
 ```
