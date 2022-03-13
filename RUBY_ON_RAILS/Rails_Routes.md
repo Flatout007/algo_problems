@@ -2,6 +2,14 @@
 
 The Rails router recognizes ```url``` ```strings``` & chooses a ```controller method``` to which the request is dispatched/maped to for processing. <b>i.e</b> The router receives a ```GET``` ```request``` for ```"/photo/17"``` & realizes that ```PhotosController#show()``` should be called on/for an instance of ```Photo``` with the ```:id``` of an ```int``` 17. <b>N.B</b> <i>the router matches on both HTTP method and path name.</i>
 
+<i>navaigate to ```# config/routes.rb``` to begin drawing route resources </i>
+```ruby
+# config/routes.rb
+Photo::Application.routes.draw do
+  resources :photo, only: [:index, :show] 
+end
+```
+
 To get a complete list of the available routes you set up so far in your application, execute the ```rails routes``` command
 ```
 $ rails routes
