@@ -1,6 +1,11 @@
 # Rails's Router
 
-The Rails router recognizes ```url``` ```strings``` & chooses a controller method to which the request is dispatched/maped to for processing. <b>i.e</b> The router receives a GET request for ```/photo/17``` & realizes that ```PhotosController#show()``` should be called for a Photo with the ```:id``` of 17. <b>N.B</b> <i>the router matches on both HTTP method and path name.</i>
+The Rails router recognizes ```url``` ```strings``` & chooses a controller method to which the request is dispatched/maped to for processing. <b>i.e</b> The router receives a GET request for ```"/photo/17"``` & realizes that ```PhotosController#show()``` should be called for a Photo with the ```:id``` of 17. <b>N.B</b> <i>the router matches on both HTTP method and path name.</i>
+
+To get a complete list of the available routes you set up so far in your application, execute the ```rails routes``` command
+```
+$ rails routes
+```
 
 ### Rails restful sample routes for a Photo 
 | HTTP Request | Route/method | Action & Description of Action |  
