@@ -19,7 +19,7 @@
 :heavy_check_mark: Additionally, ```useEffect()``` can take an array as a second argumnet.
 			   This array (when empty) limits the ```useEffect()``` communications with React to only on page load.
 			   Assigning an empty cell to a variable stored in ```useState()``` will limit communications
-			   to page load and whenever the state stored in ```useState()``` is updated.
+			   to page load and whenever the variable is updated.
 
 
 
