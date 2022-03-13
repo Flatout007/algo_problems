@@ -5,7 +5,7 @@
 <img src="https://assets.aaonline.io/fullstack/rails/assets/rails_diagram.png"></img>
 
 ### MODEL
-interacts with an sql database via Rails's ```Active record``` ```class``` to give data to the ```controller```
+interacts with data stored inside an sql database via Rails's ```Active record``` ```class``` to exchange said data with the ```controller```
 
 ### VIEW
 interacts with only the ```controller``` to retreive data from it & show it to the user. i.e (an html response filled with data from a server)
