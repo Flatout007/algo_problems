@@ -12,3 +12,24 @@ The Rails router recognizes ```url``` ```strings``` & chooses a controller metho
 | GET	| /photos/:id/edit	| <b>edit</b> - return an HTML form for editing a photo
 | PATCH or PUT	| /photos/:id	| <b>update</b> - update a specific photo
 | DELETE	| /photos/:id	| <b>destroy</b> - delete a specific photo
+
+
+### Rails's Router Helper Methods
+| rails method | url |   
+|---------------|   --------------- |
+| photos_url()	| http://www.example-site.com/photos
+| new_photo_url()	| http://www.example-site.com/photos/new
+| photo_url(@photo)	| http://www.example-site.com/photos/#{@photo.id}
+| edit_photo_url(@photo)	| http://www.example-site.com/photos/#{@photo.id}/edit
+
+<b>N.B</b> <i>you can embed query-string options into the url-helpers easily:</i>
+
+<b>E.x</b> ```photos_url(recent: true) == http://www.example-site.com/photos?recent=true```
+
+You can specify the controller action that Rails should run for ```GET/``` by using the root method:
+```root to: posts#index```
+This invokes the PostsController's index method when the root URL is requested.
+
+### REST philosophy
+things like "liking a photo", should be thought of in terms of CRUD (create,read,update,destroy) ```actions``` on ```resources```. i.e, instead of creating a custom, non-RESTful ```controller action``` to "like" a photo, we might create a new ```resource```, a Like ```object```, which we could either create, destroy etc..
+
