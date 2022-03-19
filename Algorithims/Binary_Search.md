@@ -5,7 +5,7 @@
 :heavy_check_mark: The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n)
 hence, <b> N.B: The array must be sorted first to apply binary search</b>.
 
-_Binary Search pusedocode_:
+_Binary Search pseudocode_:
 ```s
 binary search(arr, start, n, x)
   if n is in bounds meaning "if n >= start":
