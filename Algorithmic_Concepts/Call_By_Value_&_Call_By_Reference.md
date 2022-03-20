@@ -17,8 +17,6 @@
  fun(m,n) // m & n are the actual parameters
  ```
 
-<b>N.B</b> _```m``` & ```n``` are the actual parameters_
-
 :heavy_check_mark: <b>Formal Parameters</b>: the ```parameters``` ```defined``` or received by a ```function``` when being designed
 ```c
 fun(m, n) { // m & n are the formal parameters
