@@ -2,7 +2,7 @@
 # HOOKS <img src="https://alduncanson.gallerycdn.vsassets.io/extensions/alduncanson/react-hooks-snippets/1.2.0/1603323134806/Microsoft.VisualStudio.Services.Icons.Default" alt="react logo" width="100"/>
 :heavy_check_mark: Hooks are special functions that "hook" into your react component to effectively modify its ```context``` during its lifecycle
 
-:heavy_check_mark: Hooks are replacements for ```class``` lifecylce Methods
+:heavy_check_mark: Hooks are replacements for ```class``` lifecycle Methods
 
 ## ```useState()```
 :heavy_check_mark: ```useState()``` is a function used to update state. it takes an argument(default state) and returns an array of 2 elements.
@@ -16,7 +16,7 @@
 :heavy_check_mark: ```useEffect()``` is a function used to tell react what's happening on page load, page update, and page unmount. 
 			   It fires a callback function to return at any of those times.
 
-:heavy_check_mark: Additionally, ```useEffect()``` can take an array as a second argumnet.
+:heavy_check_mark: Additionally, ```useEffect()``` can take an array as a second argument.
 			   This array (when empty) limits the ```useEffect()``` communications with React to only on page load.
 			   Assigning an empty cell to a variable stored in ```useState()``` will limit communications
 			   to page load and whenever the variable is updated.

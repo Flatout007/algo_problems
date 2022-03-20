@@ -10,7 +10,7 @@
 :heavy_check_mark: "Short-Circuit" is a programming phrase used when describing the behavior of the ```&&``` operator in a given
   		   programming language.
 
-:heavy_check_mark: In some languages like JS, the implementation of the ```&&``` operator "short-circuts", stops checking, 
+:heavy_check_mark: In some languages like JS, the implementation of the ```&&``` operator "short-circuits", stops checking, 
    		   and returns ```false``` as soon as it finds a ```false``` value.
 
 :heavy_check_mark: This allows react to make sure needed data is there before it moves on to check and/or render the next piece of code. **N.B** *if the ```&&``` operator returns false during render, render will return false, and
