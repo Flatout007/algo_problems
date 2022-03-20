@@ -8,7 +8,7 @@ ele {
   background-color: white;
 }
 ```
-<b>N.B</b> simply adding tailwind's ```"bg-white"``` class to ```ele``` will have the same effect as adding the ```background-color``` ```"white"``` to the ```css``` ```selector``` ```ele```
+<b>N.B</b> simply adding tailwind's ```"bg-white"``` class to  ```ele``` will have the same effect as adding the ```background-color``` ```"white"``` to the ```css``` ```selector``` ```ele```
 
-### Tailwind Documentation :page_facing_up:
+### Tailwind CSS Documentation :page_facing_up:
 :link: "https://tailwindcss.com/docs"
