@@ -10,7 +10,7 @@
 :heavy_check_mark: those segments of memory consist of many ```properties``` such as a ```value``` &  ```memory address```
 
 ### Formal & Actual Parameters
-:heavy_check_mark: There are two key features ```variables``` have when being used a ```parameters```.
+:heavy_check_mark: There are two key features ```variables``` have when being used as ```parameters```.
 
 :heavy_check_mark: <b> 1. Actual Parameters</b>: the ```parameters``` given to a ```function``` when being used / ```called```.
  ```c
