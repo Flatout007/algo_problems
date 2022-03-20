@@ -9,6 +9,3 @@ ele {
 }
 ```
 <b>N.B</b> simply adding the ```"bg-white"``` class to ```ele``` will have the same effect as adding the ```background-color``` ```"white"``` to the ```css``` ```selector``` ```ele```
-
-
-
