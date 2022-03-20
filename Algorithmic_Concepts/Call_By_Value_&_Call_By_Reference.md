@@ -1,9 +1,11 @@
 ## Call By Value & Call By Reference
+:heavy_check_mark: "Call By Value" & "Call By Reference" are phrases used to describe the behavior of 
+```parameter``` ```variables``` when being used on or in ```function``` ```calls```
 
 :heavy_check_mark: To understand ```Call``` By ```Value``` & ```Call``` By ```Reference```, is to first understand ```variables``` & the behavior / "side effects" of ```variables```, particularly when using them as ```parameters``` in ```function``` ```calling```. 
 
 ### Variables
-:heavy_check_mark: ```Variables``` are blocks of memory the computer uses & to keep track of data types
+:heavy_check_mark: ```Variables``` are blocks of memory the computer dedicates to keep track of data types
 
 :heavy_check_mark: those blocks of memory consist of many ```properties``` such as a ```value``` &  ```memory address```
 
