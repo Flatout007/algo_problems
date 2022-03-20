@@ -12,12 +12,12 @@
 ### Formal & Actual Parameters
 :heavy_check_mark: There are two key features ```variables``` have when being used a ```parameters```.
 
-:heavy_check_mark: <b>Actual Parameters</b>: the ```parameters``` given to a ```function``` when being used / ```called```.
+:heavy_check_mark: <b> 1. Actual Parameters</b>: the ```parameters``` given to a ```function``` when being used / ```called```.
  ```c
  fun(m,n) // m & n are the actual parameters
  ```
 
-:heavy_check_mark: <b>Formal Parameters</b>: the ```parameters``` ```defined``` or received by a ```function``` when being designed
+:heavy_check_mark: <b>2. Formal Parameters</b>: the ```parameters``` ```defined``` or received by a ```function``` when being designed
 ```c
 fun(m, n) { // m & n are the formal parameters
   // code 
