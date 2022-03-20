@@ -8,7 +8,7 @@
 interacts with data stored inside an sql database via Rails's ```Active record``` ```class``` to exchange said data with the ```controller```
 
 ### VIEW
-interacts with only the ```controller``` to retreive data from it & show it to the user. i.e (an html response filled with data from a server)
+interacts with only the ```controller``` to retrieve data from it & show it to the user. i.e (an html response filled with data from a server)
 
 ### CONTROLLER
 interacts & records data the user types in & clicks on via Rails's ```server```, ```router``` & ```dispatcher```, picks 
