@@ -2,7 +2,7 @@
 :heavy_check_mark: "Call By Value" & "Call By Reference" are phrases used to describe the behavior of 
 ```parameter``` ```variables``` when being used on or in ```function``` ```calls```
 
-:heavy_check_mark: To understand ```Call``` By ```Value``` & ```Call``` By ```Reference```, is to first understand ```variables``` & the behavior / "side effects" of ```variables```, particularly when using them as ```parameters``` in ```function``` ```calling```. 
+:heavy_check_mark: To understand ```Call``` By ```Value``` & ```Call``` By ```Reference```, is to first understand ```variables``` & the behavior or "side effects" of ```variables```, particularly when using them as ```parameters``` in ```function``` ```calling```. 
 
 ### Variables
 :heavy_check_mark: ```Variables``` are segments of memory the computer dedicates that allows programmers to store & easily keep track of data types
@@ -14,13 +14,13 @@
 
 :heavy_check_mark: <b> 1. Actual Parameters</b>: the ```parameters``` given to a ```function``` when being used / ```called```.
  ```c
- fun(m,n) // m & n are the actual parameters
+ fun(m,n) // m & n are actual parameters
  ```
 
-:heavy_check_mark: <b>2. Formal Parameters</b>: the ```parameters``` ```defined``` or received by a ```function``` when being designed
+:heavy_check_mark: <b>2. Formal Parameters</b>: the ```parameters``` ```defined``` or received by a ```function``` when being ```defined``` or designed
 ```c
-fun(m, n) { // m & n are the formal parameters
-  // code 
+fun(m, n) { // m & n are formal parameters
+  // code
 } 
  ```
  
