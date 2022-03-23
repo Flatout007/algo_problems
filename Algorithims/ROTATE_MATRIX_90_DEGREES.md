@@ -3,6 +3,7 @@
 
 ```c
  1.TRANSPOSE or "flip" the matrix's rows & columns
+ 
  2.REVERSE every row in matrix
 ```
 

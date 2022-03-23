@@ -5,7 +5,9 @@
 ```c
     1.FOR 0'th row to len of matrix & 
         FOR cur row to len of matrix's columns; REPEAT steps#2 & 3.
+
     2.IF not part of main diagonal, DO step#3.
+    
     3.SWAP current row with corresponding column;
 ```
 

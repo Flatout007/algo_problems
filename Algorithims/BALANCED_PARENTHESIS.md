@@ -6,8 +6,10 @@
 :heavy_check_mark:**Open brackets are closed in the correct order.**
 
 ```c
- 1.SET stack to compare last bracket pushed in
+ 1.SET stack to compare last bracket pushed 
+ 
  2.FOR 0 to string len, REPEAT STEP#3;
+ 
  3.IF opening brackets, push on to stack;
    ELSIF closing brackets- 
     IF cur & top arePairs() & there's something on stack, pop from stack
