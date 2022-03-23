@@ -32,5 +32,4 @@ var transpose = function(matrix) {
         }
     }
 }
-
 ```
