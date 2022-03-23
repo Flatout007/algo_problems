@@ -38,6 +38,10 @@ var printSpiral = function(arr) {
             console.log(arr[i][maxC-1]);
         }
         maxC--; 
+        
+        // if r or c is a cell already seen by previous loops
+        if(r>maxR-1 || c>maxC-1) 
+            break; 
 
         // bottom 
         for(let j = maxC-1; j>=c; i--) {
