@@ -1,5 +1,5 @@
 ## Pseudo Code
-**N.B** _A program that "transposes" or flips the matrix's row and column indices_
+**N.B** _A program that "transposes" or flips the matrix's row and column indices_ <br>
 **N.B** _This "in-place" implementation only works if ```row length == column``` length_
  
 ```c
