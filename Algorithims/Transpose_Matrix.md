@@ -1,6 +1,6 @@
 ## Pseudo Code
 **N.B** _A program that "transposes" or flips the matrix's row and column indices_ <br>
-**N.B** _This "in-place" implementation only works if ```row length == column``` length_
+**N.B** _This "in-place" implementation only works if ```row length == column length```_
  
 ```c
     1.FOR 0'th row to len of matrix & 
