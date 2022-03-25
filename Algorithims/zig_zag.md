@@ -8,7 +8,7 @@
     2.WHILE iterator's less than len of s, DO step#3.;
 
     3.FOR 0 in range of mat's len, fill column with chars from s; then,
-      FOR mat's len-2 down to 1, simulate diagonal by filling column, but excluding already seen & column cells to be used next iteration;
+      FOR mat's len-2 down to 1, simulate diagonal by filling column, excluding already seen & column cells to be used next iteration;
 ```
 
 ## JavaScript
