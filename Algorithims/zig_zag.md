@@ -21,8 +21,8 @@
  * A program that takes a string & stores it in a matrix in a zigzag pattern 
  * on a given number of rows
  *
- * Time Complexity: O(p) + O(n2*m)
- * Space Complexity: 
+ * Time Complexity: O(numRows) + O(s.length);
+ * Space Complexity: O(s.length) 
  *
  * @param {string} s
  * @param {number} numRows
