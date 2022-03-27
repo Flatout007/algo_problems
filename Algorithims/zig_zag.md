@@ -1,23 +1,22 @@
 ## Pseudo Code
  
-*_A program that takes a string & stores it in a matrix in a zig-zag pattern on a given number of rows. returns new matrix._*
+*_A program that takes a string & stores it in a matrix in a zig-zag pattern on a given number of rows, returns new matrix._*
 
 ```c
     1.SET an n * n matrix mat. n equals numRows;
 
-    2.WHILE iterator's less than len of s, DO step#3.;
+    2.WHILE iterator's less than len of s, DO step#3;
 
     3.FOR 0 in range of mat's len, fill column with chars from s; then,
-      FOR mat's len-2 down to 1, simulate diagonal by filling column, excluding already seen & column cells to be used next iteration;
+      FOR mat's len-2 down to 1, simulate diagonal by filling column;
 ```
 
 ## JavaScript
 
-*_A program that takes a string & stores it in a matrix in a zig-zag pattern on a given number of rows. returns new matrix._*
+*_A program that takes a string & stores it in a matrix in a zig-zag pattern on a given number of rows, returns new matrix._*
 
 ```js
 /**
- * Exercises 1.3: Zig Zag Conversion
  * A program that takes a string & stores it in a matrix in a zigzag pattern 
  * on a given number of rows
  *
@@ -43,7 +42,7 @@
             mat[i].push(s[itr++]);
         }
 
-        // push to mat in between range's [mat.length-2..1] to simulate diagonal's 
+        // push chars to mat[i] in between range's [mat.length-2..1] to simulate diagonal's 
         for(let i = mat.length-2; i>=1; i--) {
             if(itr > s.length) 
                 break;
