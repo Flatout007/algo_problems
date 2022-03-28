@@ -19,36 +19,34 @@ Example 2:
 Input: s = "()[]{}"
 Output: true
 */
-
- /**
+/**
  * @param {string} s
  * @return {boolean}
  */
-var isValid = function(s) {
-    let stack = [];
-    
-    // use stack to match opening chars with closing ones.
-    
-   for(let i in s) {
-       if(['[','(','{'].includes(s[i])) stack.push(s[i]);
-       let top = stack[stack.length - 1];
-       
-       if(s[i] === ')') {
-           if(top === '(') {
-             stack.pop();
-           } else return false;
-       }
-       if(s[i] === '}') {
-           if(top === '{') {
-             stack.pop();
-           } else return false;
-       }
-       if(s[i] === ']') {
-           if(top === '[') {
-             stack.pop();
-           } else return false;
-       }
-   }
-    
-    return stack.length === 0;
+ var isValid = function(s) {
+  let stk = [];
+  
+  for(let i = 0; i<s.length; i++) {
+      if(s[i] === '{' || s[i] === '[' || s[i] === '(')
+          stk.push(s[i]);
+      else if(s[i] === ']' || s[i] === '}' || s[i] === ')') {
+          if(stk.length > 0 && fun(stk[stk.length-1], s[i])) {
+              stk.pop();
+          } else return false;
+      }
+  }
+  
+  return stk.length === 0;
 };
+
+// checks if p1 & p2 are a valid pair
+var fun = function(p1,p2) {
+  if(p1 === '{' && p2 ==='}')
+      return true;
+  if(p1 === '[' && p2 ===']')
+      return true;
+  if(p1 === '(' && p2 ===')')
+      return true;
+  
+  return false;
+}
