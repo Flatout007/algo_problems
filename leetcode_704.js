@@ -16,21 +16,16 @@ Explanation: 9 exists in nums and its index is 4
  * @return {number}
  */
  var search = function(nums, target) {
-    nums = nums.sort((a,b) => a-b);
-    let p1 = 0;
-    let p2 = nums.length - 1;
+    let left = 0, right = nums.length-1;
     
-    while(p1 <= p2) {
-        let mid = Math.floor((p1 + p2) / 2);
-        if(nums[mid] < target) {
-           p1 = mid + 1;
-        } 
-        if(nums[mid] > target) {
-            p2 = mid - 1;
-        }
+    while(left<=right) {
+        let mid = left + (right - left / 2);
+        
         if(nums[mid] === target) {
             return mid;
-        }
+        } else if(nums[mid] < target) {
+            left = mid+1;
+        } else right = mid-1;
     }
     
     return -1;
