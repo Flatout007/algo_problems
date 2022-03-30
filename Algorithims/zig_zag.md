@@ -35,7 +35,7 @@
 
     while(itr < s.length) {
         for(let j = 0; j<mat.length; i++) {
-            // if run out of chars in s
+            // break! if run out of chars in s
             if(itr > s.length) 
                 break;
          
