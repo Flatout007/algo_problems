@@ -32,10 +32,7 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
  var hasCycle = function(head) {  
     let arr = [];
     let l1 = head;
-    
-    // the trick is to iterate through all nodes,
-    // keeping track of if we have seen this node before.
-    
+
     while(l1) {
         if(arr.includes(l1.next)) return true;
         arr.push(l1.next);
