@@ -40,7 +40,7 @@ gridNew = [ [8, 4, 8, 7],
     SET them in a array of tuples "[building#, sum]";
     
     2.SORT each tuple by its second element, "sum";
-    (This is used to compare orginal view)
+    (This is used to compare original views)
     
     3.ROTATE grid by 90deg then increment each cell of the column or "building";
     CHECKING if the order of the incremented building is the same as the original views;
