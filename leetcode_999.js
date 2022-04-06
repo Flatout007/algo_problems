@@ -26,10 +26,7 @@ Explanation: In this example, the rook is attacking all the pawns.
  */
  var numRookCaptures = function(board) {
     /*
-     1. FOR 0 in range of board len-
-         FOR 0 in range of board[0] len; 
-              look for Rook;
-        (i.e "traverse board until found rook 'R'")
+     1. TRAVERSE board until found rook 'R'"
          
      2. CHECK & Traverse all 4 horizontal directions from current
         position returning ```count``` from doing step#3;
