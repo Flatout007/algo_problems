@@ -1,11 +1,24 @@
 /**
+ * 
+ * @param {
+    * 498. Diagonal Traverse [Medium]
+    * 
+    * Given an m x n matrix mat, return an array of all the 
+    * elements of the array in a diagonal order.
+    * 
+    * Example 1:
+    * Input: mat = [[1,2,3],[4,5,6],[7,8,9]]
+    * Output: [1,2,4,7,5,3,6,8,9]
+ * } 
+ */
+/**
  * @param {number[][]} mat
  * @return {number[]}
  */
  var findDiagonalOrder = function(arr) {
     /*
     1.SET an new array
-      (to fill with traversed diagaonls & return)
+      (to fill with traversed diagonals & return)
     
     2.TRAVERSE up then down diagonals, storing them & doing step#3
       
