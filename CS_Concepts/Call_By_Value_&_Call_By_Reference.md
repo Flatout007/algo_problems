@@ -26,4 +26,4 @@ fun(m, n) { // m & n are formal parameters
  
  ### Call By Value
  :heavy_check_mark: When ```calling```by value, the "values" of the ```actual``` ```parameters``` will be copied to the ```formal``` ```parameters```. 
- in other words, only the "value" of the ```variables``` are given to  the ```function``` & not the ```variable``` itself
+ in other words, only the "value" property of the ```variables``` are given to  the ```function``` & not the ```variable``` itself
