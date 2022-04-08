@@ -32,7 +32,7 @@
     let turn = 0;
     let row = 0, col = 0, area = arr.length * arr[0].length;
     
-    // Matrix is less than 2. Impossible to get diagaonals, so flatten matrix
+    // Matrix is less than 2. Impossible to get diagonal's, so flatten matrix
     if(arr.length<2 || arr[0].length<2) 
         return arr.flat();
     
@@ -45,7 +45,7 @@
                 mat.push(arr[row--][col++]);
             }
             
-            // get the final or single cell in diaganal
+            // get the final or single cell in diagonal
             mat.push(arr[row][col]);
 
             if (row == arr.length-1 && col == arr[0].length-1) break;
