@@ -18,7 +18,7 @@
  * }
  */
 /**
- *  @function search(nums,target) 
+ *  @function search(nums->number[],target->number) 
  *  @param {number[]} nums
  *  @param {number} target
  *  @return {number}
