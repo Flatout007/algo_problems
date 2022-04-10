@@ -16,12 +16,11 @@
  *   Output: 4
  *   Explanation: 9 exists in nums and its index is 4
  * }
- */
-/**
- *  @function search(nums->number[],target->number) 
- *  @param {number[]} nums
- *  @param {number} target
- *  @return {number}
+ * 
+ * @function search(nums->number[],target->number)
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
  */
 var search = function (nums, target) {
   let left = 0,
