@@ -13,7 +13,7 @@
         * 
         * int add(int val) Appends the integer val to the stream and returns the element representing the kth 
         * largest element in the stream.
-    };
+    }
 @example {
     Example 1:
 
@@ -31,7 +31,7 @@
     kthLargest.add(10);  // return 5
     kthLargest.add(9);   // return 8
     kthLargest.add(4);   // return 8
-    };
+    }
  */
 /**
  * @param {number} k
