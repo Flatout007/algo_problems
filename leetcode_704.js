@@ -1,4 +1,6 @@
 /**
+ * @function search(nums->number[],target->number)
+ * 
  * @description @param {
  *   704. Binary Search [Easy]
  *
@@ -17,7 +19,6 @@
  *   Explanation: 9 exists in nums and its index is 4
  * }
  * 
- * @function search(nums->number[],target->number)
  * @param {number[]} nums
  * @param {number} target
  * @return {number}
