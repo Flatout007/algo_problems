@@ -2,15 +2,15 @@
 **N.B** _A program that traverses a matrix diagonally from start to end boundaries_ <br>
  
 ```c
-    1.SET start,end boundaries of matrix `r,c,maxR,maxC`;
+    1.SET start,end boundaries of matrix;
     
-    2.WHILE the start boundaries are less than the end boundaries; 
+    2.WHILE the start boundaries are less than end boundaries; 
       DO step#3;
 
-    3.FOR up then down diagonals, traverse them then check 2 cases;
-      IF at row & column of matrix break;
-      IF cant set up for next diagonal traverse, increment row or column respectively;
-      ELSE set up for next diagonal traverse;
+    3.FOR up then down diagonals traverse them, checking 2 cases after each traversal;
+      IF at last row & column of matrix break out loop;
+      IF cant set up for next diagonal traversal, increment row or column respectively;
+      ELSE set up for next diagonal traversal;
 ```
 
 ## JavaScript
