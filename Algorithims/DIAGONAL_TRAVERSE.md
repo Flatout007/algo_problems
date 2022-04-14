@@ -20,12 +20,12 @@
 /**
  * A program that traverses a matrix diagonally from start to end boundaries
  *
- * @param {number[][]} matrix
+ * @param {number[][]} mat
  * @return {void} 
  * TIME: O(m*n) 
  * SPACE: O(1)
  */
-var diagonal = function(matrix) {
+var diagonal = function(mat) {
    let r = 0, c = 0, maxC = mat[0].length, maxR = mat.length;
 
    while(r<maxR && c<maxC) {
