@@ -1,4 +1,6 @@
 /** 
+@function diStringMatch(s->string);
+
 @description @param {
     942. DI String Match[Easy]
 
