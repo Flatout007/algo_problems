@@ -1,23 +1,31 @@
 
-/*
-// 3. Longest Substring Without Repeating Characters
-Given a string s, find the length of the longest substring without repeating characters.
+/** 
+@function lengthOfLongestSubstring(s->string);
 
-Example 1:
-Input: s = "abcabcbb"
-Output: 3
-Explanation: The answer is "abc", with the length of 3.
+@name @namespace { Longest Substring Without Repeating Characters LeetCode 3.}
 
-Example 2:
-Input: s = "bbbbb"
-Output: 1
-Explanation: The answer is "b", with the length of 1.
+@description @namespace { 
+    3. Longest Substring Without Repeating Characters
+
+    Given a string s, find the length of the longest substring 
+    without repeating characters.
+}
+
+@example @namespace {
+    Example 1:
+    Input: s = "abcabcbb"
+    Output: 3
+    Explanation: The answer is "abc", with the length of 3.
+
+    Example 2:
+    Input: s = "bbbbb"
+    Output: 1
+    Explanation: The answer is "b", with the length of 1.
+}
+
+* @param {string} s
+* @return {number}
 */
-
-/**
- * @param {string} s
- * @return {number}
- */
  var lengthOfLongestSubstring = function(s) {
     let windEnd,
     windStart = 0,
