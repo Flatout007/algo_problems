@@ -52,7 +52,7 @@ Node.createTree = function() {
 }
 
 /**
- * @function inOrder(root=>Node);
+ * @function inOrder(root->Node);
  * 
  * @algorithm {
  *   1.IF root equals null return to recursive call;
@@ -68,7 +68,7 @@ Node.inOrder = function(root) {
     Node.inOrder(root.right); 
 }
 /**
- * @function preOrder(root=>Node);
+ * @function preOrder(root->Node);
  * 
  * @algorithm {
  *   1.IF root equals null return to recursive call;
@@ -85,7 +85,7 @@ Node.preOrder = function(root) {
 }
 
 /**
- * @function postOrder(root=>Node);
+ * @function postOrder(root->Node);
  * 
  * @algorithm {
  *   1.IF root equals null return to recursive call;
