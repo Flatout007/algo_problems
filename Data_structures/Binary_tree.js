@@ -1,5 +1,5 @@
 /** 
-@name Binary Tree.
+@name BinaryTree.
 
 @description @namespace {
     In computer science, a binary tree is a 
