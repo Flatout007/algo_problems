@@ -13,9 +13,8 @@
        https://computersciencewiki.org/index.php/Two-dimensional_arrays
    }
  */
-let twoDArray = new Array(2); 
-for(let i = 0; i<twoDArray.length; i++)
-    twoDArray[i] = new Array(3);
+let twoDArray = new Array(2);
+for (let i = 0; i < twoDArray.length; i++) twoDArray[i] = new Array(3);
 
 let val, row, data, idx;
 /**
@@ -34,12 +33,11 @@ let val, row, data, idx;
        ADD user data to array;
     }
  */
-for(let i = 0; i<twoDArray.length; i++) {
-
-    for(let j = 0; j<twoDArray[i].length; j++) {
-        val = parseFloat(prompt("Enter a number"));
-        twoDArray[i][j] = val;
-    }
+for (let i = 0; i < twoDArray.length; i++) {
+  for (let j = 0; j < twoDArray[i].length; j++) {
+    val = parseFloat(prompt("Enter a number"));
+    twoDArray[i][j] = val;
+  }
 }
 
 console.log(twoDArray);
@@ -60,17 +58,19 @@ console.log(twoDArray);
 */
 data = parseFloat(prompt("Enter a number"));
 row = parseFloat(prompt("Enter row you want to insert " + data));
-pos = parseFloat(prompt("What position in row " + row + " would you like to store "+ data))
+pos = parseFloat(
+  prompt("What position in row " + row + " would you like to store " + data)
+);
 
-if(pos <= 0 || row <= 0) {
-    alert("Whoops, invalid row or position");
+if (pos <= 0 || row <= 0) {
+  alert("Whoops, invalid row or position");
 } else {
-    let i = row-1;
-    let len = twoDArray[i].length;
-    for(let j = len-1; j>=pos-1; j--) {
-        twoDArray[i][j+1] = twoDArray[i][j];
-    }
-    twoDArray[i][pos-1] = data;
+  let i = row - 1;
+  let len = twoDArray[i].length;
+  for (let j = len - 1; j >= pos - 1; j--) {
+    twoDArray[i][j + 1] = twoDArray[i][j];
+  }
+  twoDArray[i][pos - 1] = data;
 }
 
 console.log(twoDArray);
@@ -91,19 +91,26 @@ console.log(twoDArray);
 row = parseFloat(prompt("Enter the row that you want to delete from"));
 pos = parseFloat(prompt("Enter the position of the data you want to delete"));
 
-if(row <= 0 || pos <= 0) {
-    alert("Whoops, invalid row or position");
+if (row <= 0 || pos <= 0) {
+  alert("Whoops, invalid row or position");
 } else {
-    let i = row-1;
-    let len = twoDArray[i].length;
-    let data = twoDArray[i][pos-1];
-    for(let j = pos-1; j<len; j++) {
-        twoDArray[i][j] = twoDArray[i][j+1];
-    }
-    alert("You've successfully removed " + data + " from array " + row + " at position " + pos);
-    twoDArray[i][len-1] = null;
-    idx = twoDArray[i].indexOf(null);
-    twoDArray[i].splice(idx, 1);
+  let i = row - 1;
+  let len = twoDArray[i].length;
+  let data = twoDArray[i][pos - 1];
+  for (let j = pos - 1; j < len; j++) {
+    twoDArray[i][j] = twoDArray[i][j + 1];
+  }
+  alert(
+    "You've successfully removed " +
+      data +
+      " from array " +
+      row +
+      " at position " +
+      pos
+  );
+  twoDArray[i][len - 1] = null;
+  idx = twoDArray[i].indexOf(null);
+  twoDArray[i].splice(idx, 1);
 }
 
 console.log(twoDArray);
