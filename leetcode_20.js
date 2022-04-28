@@ -1,27 +1,24 @@
+/** 
+@description {
+ 20. Valid Parentheses
 
+    Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
+    determine if the input string is valid.
 
+    An input string is valid if:
+    -Open brackets must be closed by the same type of brackets.
+    -Open brackets must be closed in the correct order.
+}
+@example 
+    Example 1:
+    Input: s = "()"
+    Output: true
 
-/*
-20. Valid Parentheses
-
-Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
-determine if the input string is valid.
-
-An input string is valid if:
--Open brackets must be closed by the same type of brackets.
--Open brackets must be closed in the correct order.
-
-Example 1:
-Input: s = "()"
-Output: true
-
-Example 2:
-Input: s = "()[]{}"
-Output: true
-*/
-/**
+    Example 2:
+    Input: s = "()[]{}"
+    Output: true
  * @param {string} s
- * @return {boolean}
+ * @return boolean
  */
  var isValid = function(s) {
   let stk = [];
@@ -39,8 +36,10 @@ Output: true
   return stk.length === 0;
 };
 
-// checks if p1 & p2 are a valid pair
+
 var fun = function(p1,p2) {
+// returns true if p1 & p2 are a valid pair else false.
+
   if(p1 === '{' && p2 ==='}')
       return true;
   if(p1 === '[' && p2 ===']')
