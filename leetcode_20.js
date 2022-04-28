@@ -1,7 +1,7 @@
 /** 
-@description {
- 20. Valid Parentheses
+@name 20.Valid_Parentheses
 
+@description @namespace  {
     Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
     determine if the input string is valid.
 
@@ -9,14 +9,16 @@
     -Open brackets must be closed by the same type of brackets.
     -Open brackets must be closed in the correct order.
 }
-@example 
+
+@example {
     Example 1:
-    Input: s = "()"
-    Output: true
+        Input: s = "()"
+        Output: true
 
     Example 2:
-    Input: s = "()[]{}"
-    Output: true
+        Input: s = "()[]{}"
+        Output: true
+}
  * @param {string} s
  * @return boolean
  */
@@ -48,4 +50,4 @@ var fun = function(p1,p2) {
       return true;
   
   return false;
-}
+};
