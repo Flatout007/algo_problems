@@ -8,6 +8,7 @@ In the case of a rotation by 3, w, x, y and z would map to z, a, b and c.
 
 Original alphabet:      abcdefghijklmnopqrstuvwxyz
 Alphabet rotated +3:    defghijklmnopqrstuvwxyzabc
+
 }
 
 @example {
