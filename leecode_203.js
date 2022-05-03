@@ -1,13 +1,14 @@
-/*
-// 203. Remove Linked List Elements[Easy]
+/**
+ @description @namespace {
+    203. Remove Linked List Elements[Easy]
 Given the head of a linked list and an integer val, remove all the nodes 
 of the linked list that has Node.val == val, and return the new head.
+}
 
-Example 1:
-Input: head = [1,2,6,3,4,5,6], val = 6
-Output: [1,2,3,4,5]
- */
-/**
+@example {
+    Input: head = [1,2,6,3,4,5,6], val = 6
+    Output: [1,2,3,4,5]
+}
  * @param {ListNode} head
  * @param {number} val
  * @return {ListNode}
@@ -48,7 +49,5 @@ var size = function(head) {
 return count;
 }
 
-// put all elements excluding val in an arr
-// put arr back into linked list
 
 

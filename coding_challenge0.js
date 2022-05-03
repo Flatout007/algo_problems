@@ -88,7 +88,7 @@ function bestHand(p, n, deck) { // O(n + j) with n being the size of deck and j 
         else playerHands[i].push(deck[card]);
         i++; card++;
         numberOfCardsDealt += 1;
-        if(i >= p) i = 0; 
+        if(i >= p) i = 0 ;
         if(card === deck.length) card = 0;
         if(numberOfCardsDealt === deck.length) {
              let dealer = new Dealer(deck);
