@@ -17,7 +17,7 @@
 @algorithm {
    1.SORT each interval by its domain a.k.a its x value;
     
-   2.TRAVERSE intervals, but start at the 2nd cell to mantain a prev cell;
+   2.TRAVERSE intervals, but start at the 2nd cell to maintain a prev cell;
     
    3.CHECK 1 case while traversing intervals;
       IF the current domain is less or equal to the prev range;
