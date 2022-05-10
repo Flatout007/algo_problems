@@ -11,7 +11,6 @@
     1. 1 step + 1 step
     2. 2 steps
 }
-/**
  * @param {number} n
  * @return {number}
  */
