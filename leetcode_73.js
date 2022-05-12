@@ -1,16 +1,16 @@
 /**
- * 73. Set Matrix Zeroes[Medium]
+@description @namespace { 
+    73. Set Matrix Zeroes[Medium]
 
-Given an m x n integer matrix matrix, if an element is 0, 
-set its entire row and column to 0's.
+    Given an m x n integer matrix matrix, if an element is 0, 
+    set its entire row and column to 0's.
 
-You must do it in place.
+    You must do it in place.
 
-Example 1:
-Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
-Output: [[1,0,1],[0,0,0],[1,0,1]]
- */
-/**
+    Example 1:
+    Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
+    Output: [[1,0,1],[0,0,0],[1,0,1]]`
+}
  * @param {number[][]} matrix
  * @return {void} Do not return anything, modify matrix in-place instead.
  * Given an m x n integer matrix matrix, if an element is 0,
@@ -21,7 +21,7 @@ Output: [[1,0,1],[0,0,0],[1,0,1]]
     // 2. getting both row & column,
     // &  keeping track of where the zeros are.
     // 3. change the row & columns according to 
-    // the positon of the zeros.
+    // the position of the zeros.
     
     let pos = [];
     
